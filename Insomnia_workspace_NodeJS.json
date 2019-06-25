@@ -1,0 +1,171 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2019-06-25T14:50:17.410Z",
+  "__export_source": "insomnia.desktop.app:v6.5.4",
+  "resources": [
+    {
+      "_id": "req_4ffdf3216cff4fe4bb476726d9d02f82",
+      "authentication": {},
+      "body": {},
+      "created": 1561472686391,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1561472686391,
+      "method": "GET",
+      "modified": 1561474078521,
+      "name": "Recuperar usuarios",
+      "parameters": [],
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "created": 1561471839892,
+      "description": "",
+      "modified": 1561471839892,
+      "name": "NodeJS",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_2974e04df1864a459861b419a7947612",
+      "authentication": {},
+      "body": {},
+      "created": 1561473375328,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1561472686341,
+      "method": "GET",
+      "modified": 1561474131063,
+      "name": "Recuperar usuario",
+      "parameters": [],
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users/0",
+      "_type": "request"
+    },
+    {
+      "_id": "req_1efb85ff08624c40a605a5aaadeeb440",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Jessica\"\n}"
+      },
+      "created": 1561473397169,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_9352f7f09d6b4e53ae5f15e16153df4a",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1561472686291,
+      "method": "POST",
+      "modified": 1561474120855,
+      "name": "Adicionar usuario",
+      "parameters": [],
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users",
+      "_type": "request"
+    },
+    {
+      "_id": "req_685879d2d9aa4f9f88052299a6456008",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Raquel\"\n}"
+      },
+      "created": 1561473569545,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_9352f7f09d6b4e53ae5f15e16153df4a",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1561472686241,
+      "method": "PUT",
+      "modified": 1561474144664,
+      "name": "Editar usuario",
+      "parameters": [],
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users/4",
+      "_type": "request"
+    },
+    {
+      "_id": "req_70b4b0172c3a4db99da8aa69ae0b0240",
+      "authentication": {},
+      "body": {},
+      "created": 1561473601691,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1561472686191,
+      "method": "DELETE",
+      "modified": 1561474152814,
+      "name": "Excluir usuario",
+      "parameters": [],
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users/4",
+      "_type": "request"
+    },
+    {
+      "_id": "env_40c95eb9d679d66178508915f14b733e0f7fd3e7",
+      "color": null,
+      "created": 1561471840294,
+      "data": {
+        "base_url": "http://localhost:3000"
+      },
+      "dataPropertyOrder": {
+        "&": ["base_url"]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1561471840298,
+      "modified": 1561473963084,
+      "name": "Base Environment",
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_40c95eb9d679d66178508915f14b733e0f7fd3e7",
+      "cookies": [],
+      "created": 1561471840316,
+      "modified": 1561471840316,
+      "name": "Default Jar",
+      "parentId": "wrk_60aa03fe7fd84cfc8f8a9e5c3b07c99a",
+      "_type": "cookie_jar"
+    }
+  ]
+}
